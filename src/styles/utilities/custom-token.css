@@ -1,0 +1,33 @@
+/* カラー */
+@theme {
+  --color-white: #fafafa;
+
+  --color-slate-*: initial;
+  --color-slate-300: #d1d1df;
+  --color-slate-600: #87879d;
+  --color-slate-900: #28283d;
+
+  --color-cyan-*: initial;
+  --color-cyan-300: #8fe3f9;
+  --color-cyan-600: #4d96a9;
+
+  --color-purple-*: initial;
+  --color-purple-300: #d9b8ff;
+  --color-purple-600: #855fb1;
+}
+
+/* spacing */
+@theme {
+  --spacing-*: initial;
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-700: 3.5rem;
+  --spacing-800: 4rem;
+  --spacing-900: 4.5rem;
+  --spacing-1000: 5rem;
+  --spacing-1400: 7rem;
+}
