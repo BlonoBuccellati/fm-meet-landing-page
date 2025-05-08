@@ -1,8 +1,11 @@
-import Icon from "@/assets/logo.svg";
+import LogoIcon from "@/assets";
 import Image from "next/image";
 
-const Logo = () => {
-  return <Image src={Icon} alt="meet" />;
+interface LogoProps {
+  className?: string;
+}
+const Logo = ({ className }: LogoProps) => {
+  return <Image src={LogoIcon} alt="meet" className={className} />;
 };
 
 export default Logo;
