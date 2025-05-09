@@ -8,7 +8,7 @@ const Number = ({ num }: NumberProps) => {
       {/* 縦線 */}
       <span className="block h-1000 w-px bg-slate-300"></span>
       {/* 丸 */}
-      <div className="top-1000 flex h-700 w-700 items-center justify-center rounded-full border border-slate-300 bg-white">
+      <div className="flex h-700 w-700 items-center justify-center rounded-full border border-slate-300 bg-white">
         <span className="typo-button text-slate-600">{padded}</span>
       </div>
     </div>
