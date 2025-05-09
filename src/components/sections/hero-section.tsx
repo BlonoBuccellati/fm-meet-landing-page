@@ -4,17 +4,6 @@ import { imageHero } from "@/assets";
 import DownloadText from "@/components/download-text";
 import { Button } from "@/components/ui/button";
 
-const HeroImage = () => {
-  return (
-    <div className="relative">
-      <Image
-        src={imageHero}
-        alt="sample chat user"
-        className="relative left-1/2 mx-auto w-full min-w-[433px] -translate-x-1/2 overflow-auto"
-      />
-    </div>
-  );
-};
 const HeroText = () => {
   return (
     <>
@@ -58,7 +47,11 @@ const HeroContent = () => {
 const HeroSection = () => {
   return (
     <section className="pt-800 pb-400">
-      <HeroImage />
+      <Image
+        src={imageHero}
+        alt="sample chat user"
+        className="relative left-1/2 mx-auto w-full min-w-[433px] -translate-x-1/2 overflow-auto"
+      />
       <HeroContent />
     </section>
   );
