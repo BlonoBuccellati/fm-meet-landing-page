@@ -1,12 +1,11 @@
-import Number from "@/components/number";
 import Image from "next/image";
-
 import {
   imageManTexting,
   imageMenInMeeting,
   imageWomanInVideoCall,
   imageWomenInVideoChatting,
 } from "@/assets";
+import Number from "@/components/number";
 
 const SectionNumber = () => {
   return (

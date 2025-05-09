@@ -1,6 +1,8 @@
 import Logo from "@/components/logo";
+import FooterSection from "@/components/sections/footer-section";
 import HeroSection from "@/components/sections/hero-section";
 import MainSection from "@/components/sections/main-section";
+
 export default function Home() {
   return (
     <main>
@@ -11,6 +13,7 @@ export default function Home() {
       {/* hero section */}
       <HeroSection />
       <MainSection />
+      <FooterSection />
     </main>
   );
 }

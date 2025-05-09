@@ -1,6 +1,7 @@
-import { cn } from "@/lib/utils";
-import { cva, VariantProps } from "class-variance-authority";
 import { Slot } from "@radix-ui/react-slot";
+import { cva, VariantProps } from "class-variance-authority";
+
+import { cn } from "@/lib/utils";
 
 export const buttonVariants = cva(
   "typo-button rounded-full px-500 py-200 text-white hover:cursor-pointer",

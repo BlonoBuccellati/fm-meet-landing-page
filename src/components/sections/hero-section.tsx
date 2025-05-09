@@ -1,7 +1,8 @@
+import Image from "next/image";
+
+import { imageHero } from "@/assets";
 import DownloadText from "@/components/download-text";
 import { Button } from "@/components/ui/button";
-import { imageHero } from "@/assets";
-import Image from "next/image";
 
 const HeroImage = () => {
   return (

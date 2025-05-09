@@ -1,5 +1,6 @@
-import LogoIcon from "@/assets";
 import Image from "next/image";
+
+import LogoIcon from "@/assets";
 
 interface LogoProps {
   className?: string;
