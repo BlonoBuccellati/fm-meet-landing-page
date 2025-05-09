@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 import {
   imageManTexting,
@@ -8,37 +8,31 @@ import {
 } from "@/assets";
 import Number from "@/components/number";
 
+interface UserImageProps {
+  alt: string;
+  src: StaticImageData;
+}
+const UserImage = ({ alt, src }: UserImageProps) => {
+  return <Image alt={alt} src={src} className="h-fit rounded-xl" />;
+};
 const SectionImages = () => {
   return (
-    <div className="grid grid-cols-2 gap-200">
-      <Image
-        alt="woman in video call"
-        src={imageWomanInVideoCall}
-        className="rounded-xl"
-      />
-      <Image
+    <div className="tablet:grid-cols-4 mx-auto grid grid-cols-2 gap-200">
+      <UserImage alt="woman in video call" src={imageWomanInVideoCall} />
+      <UserImage
         alt="women in video chatting"
         src={imageWomenInVideoChatting}
-        className="rounded-xl"
       />
-      <Image
-        alt="men in meeting"
-        src={imageMenInMeeting}
-        className="rounded-xl"
-      />
-      <Image
-        alt="man in texting"
-        src={imageManTexting}
-        className="rounded-xl"
-      />
+      <UserImage alt="men in meeting" src={imageMenInMeeting} />
+      <UserImage alt="man in texting" src={imageManTexting} />
     </div>
   );
 };
 
 const SectionText = () => {
   return (
-    <div className="space-y-400 text-center">
-      <div className="space-y-200">
+    <div className="mx-auto max-w-[31.5rem] space-y-400 text-center">
+      <div className="mx-auto max-w-[27.8125rem] space-y-200">
         <div className="typo-overline text-cyan-600 uppercase">
           Built for modern use
         </div>

@@ -12,7 +12,7 @@ const HeroText = () => {
         Group Chat <br />
         for Everyone
       </h1>
-      <p className="typo-button text-center font-medium text-slate-600">
+      <p className="typo-button mx-auto max-w-[28rem] text-center font-medium text-slate-600">
         Meet makes it easy to connect with others face-to-face virtually and
         collaborate across any device.
       </p>
@@ -21,13 +21,13 @@ const HeroText = () => {
 };
 const HeroCTA = () => {
   return (
-    <div>
-      <div className="mx-auto w-fit">
+    <div className="tablet:flex-row tablet:items-center tablet:flex tablet:gap-200 mx-auto w-fit">
+      <div className="tablet:mb-[0] mx-auto mb-200 w-fit">
         <Button variant="cyan">
           <DownloadText />
         </Button>
       </div>
-      <div className="mx-auto mt-200 w-fit">
+      <div className="mx-auto w-fit">
         <Button variant="purple" asChild className="inline-block">
           <a href="#">What is it?</a>
         </Button>

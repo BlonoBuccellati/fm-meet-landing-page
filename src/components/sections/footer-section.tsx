@@ -22,7 +22,7 @@ const SectionHero = ({ className }: { className?: string }) => {
         fill
         className="-z-10 object-cover object-center"
       />
-      <div className="space-y-300 px-400 py-800">
+      <div className="mx-auto max-w-[31.5rem] space-y-300 px-400 py-800">
         <h1 className="typo-heading-lg">Experience more together</h1>
         <p className="typo-button font-medium">
           Stay connected with reliable HD meetings and unlimited one-on-one and
