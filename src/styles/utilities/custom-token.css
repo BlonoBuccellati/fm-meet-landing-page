@@ -1,6 +1,6 @@
 /* カラー */
 @theme {
-  --color-white: #fafafa;
+  --color-white: var(--color-white);
 
   --color-slate-*: initial;
   --color-slate-300: #d1d1df;
