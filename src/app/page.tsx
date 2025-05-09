@@ -5,15 +5,17 @@ import MainSection from "@/components/sections/main-section";
 
 export default function Home() {
   return (
-    <main>
+    <>
       {/* nav */}
-      <div className="flex items-end justify-center pt-[48px]">
+      <header className="flex items-end justify-center pt-[48px]">
         <Logo />
-      </div>
-      {/* hero section */}
-      <HeroSection />
-      <MainSection />
+      </header>
+      <main>
+        {/* hero section */}
+        <HeroSection />
+        <MainSection />
+      </main>
       <FooterSection />
-    </main>
+    </>
   );
 }
