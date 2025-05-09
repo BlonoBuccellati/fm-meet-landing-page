@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import {
   imageManTexting,
   imageMenInMeeting,
@@ -7,13 +8,6 @@ import {
 } from "@/assets";
 import Number from "@/components/number";
 
-const SectionNumber = () => {
-  return (
-    <div className="mx-auto w-fit">
-      <Number num={1} />
-    </div>
-  );
-};
 const SectionImages = () => {
   return (
     <div className="grid grid-cols-2 gap-200">
@@ -64,7 +58,7 @@ const SectionText = () => {
 const MainSection = () => {
   return (
     <section className="space-y-800 px-400 pt-400 pb-800">
-      <SectionNumber />
+      <Number num={1} className="mx-auto w-fit" />
       <SectionImages />
       <SectionText />
     </section>
