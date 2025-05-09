@@ -1,10 +1,15 @@
+import { cn } from "@/lib/utils";
+
 interface NumberProps {
   num: number;
+  className?: string;
 }
-const Number = ({ num }: NumberProps) => {
+const Number = ({ num, className }: NumberProps) => {
   const padded = String(num).padStart(2, "0");
   return (
-    <div className="flex h-[8.5rem] w-700 flex-col items-center">
+    <div
+      className={cn("flex h-[8.5rem] w-700 flex-col items-center", className)}
+    >
       {/* 縦線 */}
       <span className="block h-1000 w-px bg-slate-300"></span>
       {/* 丸 */}
