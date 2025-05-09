@@ -4,12 +4,12 @@ interface NumberProps {
 const Number = ({ num }: NumberProps) => {
   const padded = String(num).padStart(2, "0");
   return (
-    <div className="relative h-[8.5rem] w-700">
+    <div className="flex h-[8.5rem] w-700 flex-col items-center">
       {/* 縦線 */}
-      <div className="absolute left-1/2 h-1000 w-px -translate-x-1/2 bg-slate-300"></div>
+      <span className="block h-1000 w-px bg-slate-300"></span>
       {/* 丸 */}
-      <div className="typo-button absolute top-1000 left-1/2 flex h-700 w-700 -translate-x-1/2 items-center justify-center rounded-full border border-slate-300 text-center text-slate-600">
-        {padded}
+      <div className="top-1000 flex h-700 w-700 items-center justify-center rounded-full border border-slate-300 bg-white">
+        <span className="typo-button text-slate-600">{padded}</span>
       </div>
     </div>
   );
