@@ -19,6 +19,7 @@
 /* spacing */
 @theme {
   --spacing-*: initial;
+  --spacing-0: 0;
   --spacing-50: 0.25rem;
   --spacing-100: 0.5rem;
   --spacing-200: 1rem;

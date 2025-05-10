@@ -17,7 +17,7 @@ const UserImage = ({ alt, src }: UserImageProps) => {
 };
 const SectionImages = () => {
   return (
-    <div className="tablet:grid-cols-4 mx-auto grid grid-cols-2 gap-200">
+    <div className="tablet:grid-cols-4 mx-auto grid max-w-[1120px] grid-cols-2 gap-200">
       <UserImage alt="woman in video call" src={imageWomanInVideoCall} />
       <UserImage
         alt="women in video chatting"

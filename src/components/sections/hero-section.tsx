@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { imageHero } from "@/assets";
+import { desktopImageHeroLeft, desktopImageHeroRight } from "@/assets/";
 import DownloadText from "@/components/download-text";
 import { Button } from "@/components/ui/button";
 
@@ -46,13 +47,25 @@ const HeroContent = () => {
 };
 const HeroSection = () => {
   return (
-    <section className="pt-800 pb-400">
-      <Image
-        src={imageHero}
-        alt="sample chat user"
-        className="relative left-1/2 mx-auto w-full min-w-[433px] -translate-x-1/2 overflow-auto"
-      />
-      <HeroContent />
+    <section className="overflow-x-hidden pt-800 pb-400">
+      <div className="desktop:flex desktop:justify-evenly desktop:gap-400 desktop:w-[113vw] relative left-1/2 w-[107vw] -translate-x-1/2">
+        <Image
+          src={imageHero}
+          alt="sample chat user"
+          className="desktop:hidden relative left-1/2 mx-auto w-full min-w-[433px] -translate-x-1/2"
+        />
+        <Image
+          src={desktopImageHeroLeft}
+          alt="sample chat user"
+          className="desktop:inline desktop:order-first hidden w-full max-w-[394px]"
+        />
+        <Image
+          src={desktopImageHeroRight}
+          alt=""
+          className="desktop:inline desktop:order-last hidden w-full max-w-[394px]"
+        />
+        <HeroContent />
+      </div>
     </section>
   );
 };

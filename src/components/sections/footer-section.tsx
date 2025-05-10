@@ -2,29 +2,26 @@ import Image from "next/image";
 
 import { mobileImageFooter } from "@/assets";
 import Number from "@/components/number";
-import { cn } from "@/lib/utils";
 
 import DownloadText from "../download-text";
 import { Button } from "../ui/button";
 
-const SectionHero = ({ className }: { className?: string }) => {
+const SectionHero = () => {
   return (
-    <section
-      className={cn(
-        "relative bg-cyan-600/85 text-center text-white",
-        className,
-      )}
-    >
+    <section className="desktop:text-left relative bg-cyan-600/85 text-center text-white">
       {/* fill で親のサイズにピッタリ合わせる */}
+      {/* Imageは、デフォルトでabsolute */}
       <Image
         src={mobileImageFooter}
         alt=""
         fill
         className="-z-10 object-cover object-center"
       />
-      <div className="mx-auto max-w-[31.5rem] space-y-300 px-400 py-800">
-        <h1 className="typo-heading-lg">Experience more together</h1>
-        <p className="typo-button font-medium">
+      <div className="desktop:flex desktop:justify-around desktop:items-start desktop:m-0 desktop:px-1000 desktop:space-x-400 desktop:space-y-0 desktop:max-w-none mx-auto max-w-[31.5rem] space-y-300 px-400 py-1400">
+        <h1 className="typo-heading-lg desktop:max-w-[22.1875rem]">
+          Experience more together
+        </h1>
+        <p className="typo-button desktop:max-w-[22.1875rem] font-medium">
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </p>

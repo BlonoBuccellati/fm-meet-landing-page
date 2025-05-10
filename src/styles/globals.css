@@ -6,6 +6,10 @@
 /* ブレークポイント */
 @theme {
   --breakpoint-*: initial;
+  /* @mediaクエリ内ではvar()は許可されないため値を複製 */
+  /* メディアクエリでは、値に応じて、中のスタイルを適用する。
+  つまり、メディアクエリが先に判断していないと、スタイルを適用できないため、実行時に解決されるCSS変数は使うことができない。 */
+  /* 参考URL：https://github.com/tailwindlabs/tailwindcss/discussions/15113 */
   --breakpoint-mobile: 375px;
   --breakpoint-tablet: 768px;
   --breakpoint-desktop: 1440px;
