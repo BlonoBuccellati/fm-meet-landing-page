@@ -29,7 +29,7 @@ const SectionHero = () => {
         <h1 className="typo-heading-lg desktop:max-w-[22.1875rem]">
           Experience more together
         </h1>
-        <p className="typo-button desktop:max-w-[22.1875rem] font-medium">
+        <p className="typo-body-medium desktop:max-w-[22.1875rem]">
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </p>

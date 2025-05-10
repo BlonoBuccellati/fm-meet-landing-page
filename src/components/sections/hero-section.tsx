@@ -13,7 +13,7 @@ const HeroText = () => {
         Group Chat <br />
         for Everyone
       </h1>
-      <p className="typo-button mx-auto max-w-[28rem] text-center font-medium text-slate-600">
+      <p className="typo-body-medium mx-auto max-w-[28rem] text-center text-slate-600">
         Meet makes it easy to connect with others face-to-face virtually and
         collaborate across any device.
       </p>

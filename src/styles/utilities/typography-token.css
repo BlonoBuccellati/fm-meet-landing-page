@@ -11,8 +11,8 @@
   font-weight: var(--font-weight-black);
 }
 @utility typo-body-medium {
-  font-size: 18px;
-  line-height: 110%;
+  font-size: 16px;
+  line-height: 150%;
   letter-spacing: 0px;
   font-weight: var(--font-weight-medium);
 }

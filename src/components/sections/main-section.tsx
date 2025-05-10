@@ -40,7 +40,7 @@ const SectionText = () => {
           Smarter meetings, all in one place
         </h1>
       </div>
-      <p className="typo-button font-medium text-slate-600">
+      <p className="typo-body-medium text-slate-600">
         Send messages, share files, show your screen, and record your meetings —
         all in one workspace. Control who can join with invite-only team access,
         data encryption, and data export.
