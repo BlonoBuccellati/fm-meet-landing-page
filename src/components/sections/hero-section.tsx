@@ -48,7 +48,7 @@ const HeroContent = () => {
 const HeroSection = () => {
   return (
     <section className="overflow-x-hidden pt-800 pb-400">
-      <div className="desktop:flex desktop:justify-evenly desktop:gap-400 desktop:w-[113vw] relative left-1/2 w-[107vw] -translate-x-1/2">
+      <div className="desktop:flex desktop:justify-evenly desktop:gap-400 desktop:w-[113vw] relative left-1/2 w-[107vw] max-w-[1700px] -translate-x-1/2">
         <Image
           src={imageHero}
           alt="sample chat user"
