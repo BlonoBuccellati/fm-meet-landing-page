@@ -4,7 +4,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 export const buttonVariants = cva(
-  "typo-button rounded-full px-500 py-200 text-white hover:cursor-pointer",
+  "typo-button rounded-full px-500 py-200 text-white hover:cursor-pointer transition-colors duration-500",
   {
     variants: {
       variant: {
