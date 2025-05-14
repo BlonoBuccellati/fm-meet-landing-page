@@ -25,17 +25,19 @@ const SectionHero = () => {
           className="-z-10 object-cover object-center"
         />
       </picture>
-      <div className="desktop:flex desktop:justify-around desktop:items-start desktop:m-0 desktop:px-1000 desktop:space-x-400 desktop:space-y-0 desktop:max-w-none mx-auto max-w-[31.5rem] space-y-300 px-400 py-1400">
-        <h1 className="typo-heading-lg desktop:mx-0 mx-auto max-w-[22.1875rem]">
-          Experience more together
-        </h1>
-        <p className="typo-body-medium desktop:max-w-[22.1875rem]">
-          Stay connected with reliable HD meetings and unlimited one-on-one and
-          group video sessions.
-        </p>
-        <Button variant="purple">
-          <DownloadText />
-        </Button>
+      <div className="desktop:max-w-[1700px] m-auto">
+        <div className="desktop:flex desktop:justify-between desktop:items-start desktop:m-0 desktop:px-1000 desktop:space-x-400 desktop:space-y-0 space-y-300 px-400 py-1400">
+          <h1 className="typo-heading-lg desktop:mx-0 mx-auto max-w-[31.5rem]">
+            Experience more together
+          </h1>
+          <p className="typo-body-medium desktop:max-w-[22.1875rem] mx-auto max-w-[31.5rem]">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <Button variant="purple">
+            <DownloadText />
+          </Button>
+        </div>
       </div>
     </section>
   );
