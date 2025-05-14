@@ -26,7 +26,7 @@ const SectionHero = () => {
         />
       </picture>
       <div className="desktop:flex desktop:justify-around desktop:items-start desktop:m-0 desktop:px-1000 desktop:space-x-400 desktop:space-y-0 desktop:max-w-none mx-auto max-w-[31.5rem] space-y-300 px-400 py-1400">
-        <h1 className="typo-heading-lg desktop:max-w-[22.1875rem]">
+        <h1 className="typo-heading-lg desktop:mx-0 mx-auto max-w-[22.1875rem]">
           Experience more together
         </h1>
         <p className="typo-body-medium desktop:max-w-[22.1875rem]">

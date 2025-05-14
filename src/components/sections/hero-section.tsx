@@ -39,7 +39,7 @@ const HeroCTA = () => {
 
 const HeroContent = () => {
   return (
-    <div className="space-y-300 px-400">
+    <div className="desktop:space-y-400 space-y-300 px-400">
       <HeroText />
       <HeroCTA />
     </div>
@@ -57,12 +57,12 @@ const HeroSection = () => {
         <Image
           src={desktopImageHeroLeft}
           alt="sample chat user"
-          className="desktop:inline desktop:order-first hidden w-full max-w-[394px]"
+          className="desktop:inline desktop:order-first hidden w-full max-w-[394px] self-start"
         />
         <Image
           src={desktopImageHeroRight}
           alt=""
-          className="desktop:inline desktop:order-last hidden w-full max-w-[394px]"
+          className="desktop:inline desktop:order-last hidden w-full max-w-[394px] self-end"
         />
         <HeroContent />
       </div>
