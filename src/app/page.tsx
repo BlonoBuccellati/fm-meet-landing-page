@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       {/* nav */}
-      <header className="flex items-end justify-center pt-[48px]">
+      <header className="flex items-end justify-center pt-[clamp(3rem,0.714rem+4.76vw,5rem)]">
         <Logo />
       </header>
       <main>
